@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ScrollTamer</title>
+  <meta name="description" content="Privacy Policy for ScrollTamer - On-Device Privacy Screen Time Management">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-link">
+        <img src="icon.png" alt="ScrollTamer" class="brand-icon">
+        <span>ScrollTamer</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span class="badge">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Effective Date: October 20, 2026</p>
+    </div>
+
+    <div class="card">
+      <div class="highlight-box">
+        <p><strong>Summary:</strong> ScrollTamer is built with a strict <strong>On-Device Privacy</strong> principle. We do not track, collect, store, or sell your personal data. All screen time calculations and app limits run exclusively on your physical device.</p>
+      </div>
+
+      <h2>1. Information We Do Not Collect</h2>
+      <p>ScrollTamer operates without user accounts, logins, or tracking servers. We do not collect:</p>
+      <ul>
+        <li>Your name, email address, phone number, or physical location.</li>
+        <li>Your browsing history, message contents, or search queries.</li>
+        <li>The specific content you view within any applications.</li>
+        <li>Device identifiers (IDFA, MAC address, advertising identifiers).</li>
+      </ul>
+
+      <h2>2. Apple Screen Time & Family Controls Framework</h2>
+      <p>ScrollTamer utilizes Apple's official <strong>Screen Time API</strong> (including <code>FamilyControls</code>, <code>DeviceActivity</code>, and <code>ManagedSettings</code>) to enforce daily usage allowances.</p>
+      <ul>
+        <li><strong>Privacy-Preserving Tokens:</strong> When you select applications or categories to limit using the system picker, iOS provides opaque cryptographic tokens to ScrollTamer. Third-party developers cannot resolve these tokens into plain text app names outside of the system-provided interface.</li>
+        <li><strong>On-Device Sandboxed Reports:</strong> Activity duration is computed entirely on-device inside Apple's isolated report extensions. Raw usage numbers never leave your device and cannot be transmitted over any network.</li>
+      </ul>
+
+      <h2>3. Data Storage on Device</h2>
+      <p>Your plan configurations (such as baseline duration, target minutes, pacing preferences, and selected app tokens) are stored locally on your device within a private, sandboxed App Group container. This data is only accessible to ScrollTamer and its system extensions.</p>
+      <p>Deleting ScrollTamer from your device completely erases all local plan data and removes all active app restrictions.</p>
+
+      <h2>4. In-App Purchases and Subscriptions</h2>
+      <p>All in-app purchases and subscriptions (such as ScrollTamer Pro) are processed securely by Apple through the App Store using Apple's StoreKit framework. ScrollTamer does not collect, receive, or store your credit card or financial information. Your purchase history is governed by Apple's Privacy Policy.</p>
+
+      <h2>5. Third-Party Analytics and Advertising</h2>
+      <p>ScrollTamer contains <strong>zero third-party analytics SDKs, advertising libraries, or data brokers</strong>. We do not integrate tools like Google Analytics, Firebase, Facebook SDK, or any tracking software.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>Because ScrollTamer does not collect personal data from any user, we do not knowingly solicit or collect personal information from children under the age of 13.</p>
+
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date". Continued use of the application following the posting of changes constitutes acceptance of those changes.</p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions, concerns, or feedback regarding this Privacy Policy, please contact us directly at:</p>
+      <div class="contact-card">
+        <p><strong>Developer Support</strong></p>
+        <p>Email: <a href="mailto:fei316411@gmail.com" class="text-link">fei316411@gmail.com</a></p>
+        <a href="mailto:fei316411@gmail.com" class="btn">Send Email</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Help & Support</a>
+    </div>
+    <p>&copy; 2026 ScrollTamer. All rights reserved. On-Device Privacy.</p>
+  </footer>
+
+</body>
+</html>
