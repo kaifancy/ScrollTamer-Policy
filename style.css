@@ -57,6 +57,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
 }
 
 .brand-link {
@@ -68,6 +70,8 @@ header {
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .brand-icon {
@@ -75,10 +79,13 @@ header {
   height: 36px;
   border-radius: 9px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex-shrink: 0;
 }
 
 nav {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -87,6 +94,7 @@ nav a {
   color: var(--text-muted);
   font-size: 0.95rem;
   font-weight: 500;
+  white-space: nowrap;
   transition: color 0.15s ease;
 }
 
@@ -249,4 +257,43 @@ footer {
 
 .footer-links a:hover {
   color: var(--brand);
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    padding: 12px 16px;
+    gap: 10px 14px;
+  }
+
+  .brand-link {
+    gap: 8px;
+    font-size: 1.02rem;
+  }
+
+  .brand-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 0.875rem;
+  }
+
+  main {
+    margin: 28px auto 56px auto;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .card {
+    padding: 22px 18px;
+  }
 }
